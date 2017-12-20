@@ -34,3 +34,9 @@ scrape_configs:
 
     static_configs:
       - targets: ['localhost:9100']
+
+  - job_name: 'dogbot'
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:8080']
