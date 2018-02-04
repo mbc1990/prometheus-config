@@ -52,3 +52,9 @@ scrape_configs:
 
     static_configs:
       - targets: ['localhost:3002']
+
+  - job_name: 'gdax-ingester'
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:3003']
