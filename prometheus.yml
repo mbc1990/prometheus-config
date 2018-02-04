@@ -46,3 +46,9 @@ scrape_configs:
 
     static_configs:
       - targets: ['localhost:3001']
+
+  - job_name: 'reddit-ingester'
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:3002']
